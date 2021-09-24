@@ -9,7 +9,7 @@ alert(datosAlumno);*/
 
 
 //-----------------------------------------------------------------------------------------------------------------------------------
-//DESAFIO 2
+/*DESAFIO 2
 let opcion1 = "TERROR";
 let opcion2 = "COMEDIA";
 let opcion3 = "ACCION";
@@ -82,4 +82,15 @@ if (genero == opcion1) {
 
 else{
     alert(nombre + " no hay peliculas de ese genero. PERDON :( ")
+}
+*/
+
+/* DESAFIO 3 sistema de turnos*/
+for (var contador = 1; contador <= 3; contador+=1) {
+    var nombre = prompt('INGRESE NOMBRE DEL PACIENTE')
+    var dia = prompt('INGRESE QUE DIA REQUIERE EL TURNO')
+    document.write('nombre : ' + nombre + ' turno: ' + dia + '<br>');
+    if(contador==3){
+        alert('Demasiados turnos por hoy')
+    }
 }
