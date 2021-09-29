@@ -95,42 +95,52 @@ for (var contador = 1; contador <= 3; contador+=1) {
     }
 }/*
 
-//DESAFIO 4 */
-
-function calculodisponible(sueldo){
-        if (sueldo <= 20000){
-            alert('SUELDO INSUFICIENTE PARA REALIZAR OPERACIONES CREDITICIAS')
+//DESAFIO 4 COMPLEMENTARIO*/
+function validaedad(edad,altura,peso){
+        if (edad < 20 || edad > 40){
+            alert("Rango de edad no permitido");
         }
-            else if (sueldo > 20000 && sueldo <= 40000 ){ 
-                credito = sueldo * 1.5;
-                calculodecuotas(credito);
+        else{
+            calcularsobrepeso(altura,peso);
+        }
+}
+
+function calcularsobrepeso(altura,peso){
+        if (altura < 181 && peso >= 80 && peso < 90){
+            console.log("Tienes sobrepeso nivel 1")
+            nivel = 1;
+            tratamiento(nivel)
+        }   
+            else if(altura < 181 && peso >= 90 && peso < 100 ){                
+                console.log("Tienes sobrepeso nivel 2")
+                nivel = 2;
+                tratamiento(nivel);
+            }
+                else if(altura < 181 && peso >= 100){
+                    console.log("Tienes sobrepeso nivel 3")
+                    nivel = 3;
+                    tratamiento(nivel);
                 }
-                else if(sueldo > 40000 && sueldo <= 60000 ){
-                    credito = sueldo * 1.85;
-                    calculodecuotas(credito);
-                    }
-                    else if(sueldo > 60000 && sueldo <= 80000 ){
-                    credito = sueldo * 1.95;
-                    calculodecuotas(credito);
-                    }
+        else{
+            console.log("Estas en buena forma")
+        }        
 }
 
-function calculodecuotas(credito){
-            let calculo12 = credito / 12;
-            calculo12 = calculo12.toFixed(2); 
-            let calculo18 = credito / 18;
-            calculo18 = calculo18.toFixed(2); 
-            let calculo24 = credito / 24;
-            calculo24 = calculo24.toFixed(2); 
-
-            console.log("Puede retirar $" + credito + " en" + "\n" 
-            + "12 cuotas de $" + calculo12 + "\n"
-            + "18 cuotas de $" + calculo18 + "\n"
-            + "24 cuotas de $" + calculo24 + "\n"
-            );
+function tratamiento(nivel){
+        if(nivel==1){
+            console.log("Corre dos veces por semana y consume 800 calorias diarias por dia para obtener tu peso.")
+        }
+        if(nivel==2){
+            console.log("Corre tres veces por semana y consume 400 calorias diarias por dia para obtener tu peso.")
+        }
+        if(nivel==3){
+            console.log("Acude a tu medico de cabecera o a tu nutricionista amigo.")
+        }
 }
 
 
-let sueldo  =  prompt("INGRESE SU SUELDO NETO (BOLSILLO");
+let edad    =  prompt("INGRESE SU EDAD (si tiene entre 20 a 40 años)");
+let altura  =  prompt("INGRESE SU ALTURA EN CM");
+let peso    =  prompt("INGRESE SU PESO ACTUAL"); 
 
-calculodisponible(sueldo);
+validaedad(edad,altura,peso);
