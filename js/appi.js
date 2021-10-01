@@ -95,7 +95,7 @@ for (var contador = 1; contador <= 3; contador+=1) {
     }
 }/*
 
-//DESAFIO 4 COMPLEMENTARIO*/
+/*DESAFIO 4 COMPLEMENTARIO
 function validaedad(edad,altura,peso){
         if (edad < 20 || edad > 40){
             alert("Rango de edad no permitido");
