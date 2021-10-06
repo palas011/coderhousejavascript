@@ -1,14 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 5</title>
-</head>
-<body>
-    <h2>DESAFIO 5</h2>
-</body>
-<script src="js/appi_desafio5.js"></script>
-</script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title> DASHBOARD FINACIERO </title>
+    <meta name="description" content="">
+    <meta name="author" content="www.nicolaspalacios.com.ar">
+    <link href="" rel="icon">
+    <!-- mi css CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <header>
+
+
+  </header>  
+
+  <body class="wallpage">
+
+          
+          <h1 class="tituloPrincipal"> <b> Asesor Financiero </b></h1>
+          <!--inicio seccion del sitio-->
+          <section class="mx-auto text-center" >
+            <div class="container">
+                
+                <!--empieza novedades-->
+                <div class="row">
+                        <article class="col-lg-6 py-2"> 
+                            <img src="" alt="" class="w-100">
+                            <div class="bg-gradient p-2 mb-2 ">
+                                <h3>Nueva Solicitud Credito</h3>
+                                <form action="">
+                                    <button id="boton" class="btn btn-warning W-100" type="reset" onclick="nuevasolicitud();">NUEVA SOLICITUD</button>
+                                </form>   
+                            </div>                 
+                        </article>
+                        <article class="col-lg-6 py-2"> 
+                          <img src="" alt="" class="w-100">
+                          <div class="bg-gradient p-2 mb-2 ">
+                              <h3>Solicitudes Realizadas</h3>
+                              <form action="">
+                                  <button id="boton" class="btn btn-warning W-100" type="reset" onclick="versolicitudes();">VER SOLICITUDES</button>
+                              </form>   
+                          </div>                 
+                      </article>
+                </div> 
+                <!-- termina novedades -->
+            </div>
+      </section>    
+      <!-- fin seccion del sitio-->
+  
+
+      <!-- inicia script ionicons--> 
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+
+      <!-- inicia script bootstrap--> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script>
+              var myModal = document.getElementById('myModal')
+              var myInput = document.getElementById('myInput')
+
+              myModal.addEventListener('shown.bs.modal', function () {
+                myInput.focus()
+              })
+      </script>
+      <!-- fin script bootstrap-->
+      
+      <script src="js/appi.js"></script>
+
+  </body>
 </html>

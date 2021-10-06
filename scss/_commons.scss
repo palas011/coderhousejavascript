@@ -1,0 +1,105 @@
+//VARIABLES
+*{
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, p{
+font-family: $fontMain;
+}
+
+p{
+text-align: justify;
+}
+
+//COLORES//
+$bg-white: #FFFFFF;
+$bg-dark:#000000;
+$bg-grey:#333333;
+$bg-info:#1C67B4;
+$bg-succes:#3ab183;
+$bg-succes-dark:#248862;
+$bg-succes-light:#5bbe98;
+$bs-orange: #fd7e14;
+$bs-orange-ligth: #ffbe89;
+$bg-trans-1: rgba(255, 146, 5, 0.75);
+$bg-trans-2: rgba(241, 44, 44, 0.75);
+$bg-trans-3: rgba(29, 180, 110, 0.75);
+$comb1: $bg-succes-light 0%,$bg-succes-light 10%,$bg-succes 25%,$bg-succes 39%,$bg-succes-dark 79%,$bg-succes-dark 100%; 
+$comb2: $bg-trans-1 0%,$bg-trans-1 10%,$bg-trans-1 25%,$bg-trans-1 39%,$bs-orange-ligth 79%,$bs-orange-ligth 100%;
+$comb3: $bg-trans-2 0%,$bg-trans-2 10%,$bg-trans-2 25%,$bg-trans-2 39%,$bs-orange-ligth 79%,$bs-orange-ligth 100%;
+$opacity:0.5;
+$no-opacity:1;
+
+//alineado texto
+$txCenter : center;
+.align-center{
+text-align: $txCenter;
+}
+
+//DIMENSIONES//
+$w-25:25%;
+$w-50:50%;
+$w-75:75%;
+$w-90:90%;
+$w-100:100%;
+
+
+//cambiar tamaño fuente
+@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+#{$header} {
+  font-size: $size;
+}
+}
+
+img{
+max-width: 100%; 
+}
+video{
+max-width: 100%; 
+}
+//DISPLAY//
+$d-flex: flex;
+$d-block: block;
+
+$colorTop: #EEEEEE;
+$colorBottom: #222CCC;
+
+//PADDING
+$padding : 2rem;
+$margin: 2rem;
+$marginBotton : 2rem;
+$marginCentro: 0 auto;
+$paddingBotton : 2rem;
+
+//RADIUS
+$bt-radius: 2rem;
+$b-radius : 1.5rem;
+
+//ESPACIOS BOOP
+$spacer: 1rem;
+$spacers: (
+0: 0,
+1: $spacer * .25,
+2: $spacer * .5,
+3: $spacer,
+4: $spacer * 1.5,
+5: $spacer * 3,
+);
+
+//Media Querys
+//MQ - color nav
+@mixin gradient($direction, $comb) { 
+background: -webkit-linear-gradient($direction, $comb);
+background: -moz-linear-gradient($direction, $comb);
+background: -o-linear-gradient($direction, $comb);
+background: linear-gradient($direction, $comb);  
+}
+//MQ - color form
+@mixin gradient($direction, $comb2) { 
+background: -webkit-linear-gradient($direction, $comb2);
+background: -moz-linear-gradient($direction, $comb2);
+background: -o-linear-gradient($direction, $comb2);
+background: linear-gradient($direction, $comb2);  
+}  
+
+

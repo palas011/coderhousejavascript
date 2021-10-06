@@ -1,0 +1,33 @@
+footer{
+    background-color: $bg-dark; 
+    text-align: left;
+    padding: $padding;
+    text-decoration: none;
+}   
+    footer img{
+        width: 150px;
+    }
+    footer ul{
+        text-align: center;
+        color: $bg-white;
+    }
+        footer ul li{
+            text-align: center;
+            color: $bg-white;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        footer ul li a{
+            text-decoration: none;
+            color: $bg-white;
+        }
+            footer ul li a:hover{
+                color: $bg-succes;
+                cursor: pointer;
+            }
+
+.derechos{
+    text-align: center;
+    color: $bg-grey;
+}

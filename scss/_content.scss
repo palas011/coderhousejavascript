@@ -1,0 +1,127 @@
+//general
+article {
+    color: burlywood;
+}
+    article p{
+        color: $bg-white;
+    }
+    
+.tituloPrincipal{
+    font-family: $fontMain2;
+    text-align: center;
+    padding: 1rem;
+    color: $bg-white;
+}
+
+.breadcrum__bg{
+    background-color: $bg-white;
+}
+
+  //BT WHATSAPP
+.btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color: $bg-white;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+  }
+//SERVICIOS 
+.cards{    
+    background-color: $bg-succes;
+} 
+
+//NOSOTROS
+.contenedor{
+    margin: $marginCentro;
+    width: $w-75;
+} 
+    .contenedor__bgimagen{
+        background-image: url(../media/nosotros_wall.png);
+    }     
+    .contenedor__section{
+        margin: $marginCentro;       
+    }
+        .contenedor__section--h1{
+            margin: $marginCentro;
+            width: $w-90;
+        }
+            .contenedor__section--p--1{
+                width: $w-100;    
+                @include gradient(bottom, $comb1);  
+                border-radius: $b-radius;
+                padding-top: $padding;
+            }
+            .contenedor__section--p--2{
+                width: $w-100;    
+                @include gradient(bottom, $comb2);  
+                border-radius: $b-radius;
+                padding-top: $padding;
+            }    
+            .contenedor__section--p--3{
+                width: $w-100;    
+                @include gradient(bottom, $comb3);  
+                border-radius: $b-radius;
+                padding-top: $padding;
+            }
+                .contenedor__section--p--1--2--3--p{
+                    margin: $marginCentro;
+                    width: $w-90;               
+                    margin-bottom: $margin;
+                    padding-bottom: $padding;
+                }
+//FIN NOSOTROS
+
+//CONTACTO
+.form{
+    border-radius: $b-radius;
+    @include gradient(bottom, $comb2);   
+}
+    .form__div{
+        padding: $padding;
+    }
+        .form__input--width{
+            width: $w-100;
+        }
+        .form__label--font{
+            font-family: $fontMain;
+        }
+        .form__div__btn{
+            width: $w-25;
+        }
+            .form__div__btn--bg{
+                height: 50px;
+                border-radius: $b-radius;
+                background-color: $bg-succes;
+                color:$bg-white;
+            }
+//FIN
+
+    .cards__btn{
+        height: 50px;
+    }
+        .cards__btn--bg{
+            width: $w-25;
+            border-radius: $b-radius;
+            background-color: $bg-succes;
+            color:$bg-white;
+        }
+            .cards__btn--bg:hover{
+                width: $w-25;
+                border-radius: $b-radius;
+                background-color: $bg-succes-light;
+                color:$bg-white;
+            }
+
+.wallpage{
+    background-image: url(../media/wall.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
