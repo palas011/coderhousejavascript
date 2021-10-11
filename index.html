@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title> DASHBOARD FINACIERO </title>
+    <title> DASHBOARD FINANCIERO </title>
     <meta name="description" content="">
     <meta name="author" content="www.nicolaspalacios.com.ar">
     <link href="" rel="icon">
@@ -22,36 +22,55 @@
   <body class="wallpage">
 
           
-          <h1 class="tituloPrincipal"> <b> Asesor Financiero </b></h1>
-          <!--inicio seccion del sitio-->
-          <section class="mx-auto text-center" >
+      <h1 class="tituloPrincipal"> <b> Asesor Financiero </b></h1>
+      <!--inicio seccion del sitio-->
+
+      <section class="mx-auto text-center" >
             <div class="container">
                 
                 <!--empieza novedades-->
                 <div class="row">
-                        <article class="col-lg-6 py-2"> 
-                            <img src="" alt="" class="w-100">
-                            <div class="bg-gradient p-2 mb-2 ">
-                                <h3>Nueva Solicitud Credito</h3>
-                                <form action="">
-                                    <button id="boton" class="btn btn-warning W-100" type="reset" onclick="nuevasolicitud();">NUEVA SOLICITUD</button>
-                                </form>   
-                            </div>                 
-                        </article>
-                        <article class="col-lg-6 py-2"> 
-                          <img src="" alt="" class="w-100">
-                          <div class="bg-gradient p-2 mb-2 ">
-                              <h3>Solicitudes Realizadas</h3>
-                              <form action="">
-                                  <button id="boton" class="btn btn-warning W-100" type="reset" onclick="versolicitudes();">VER SOLICITUDES</button>
-                              </form>   
-                          </div>                 
-                      </article>
+
+                      <div id="nuevaSolicitud" class="col-lg-6 py-2">
+
+                      <img src="" alt="" class="w-100">
+
+                          <div class="bg-gradient p-2 mb-2 tituloPrincipal">
+                                  <h3>Cargar Solicitud</h3>
+                                        <form id="formNuevaSolicitud">
+                                            <ul>
+                                              <li >  <input type="text" placeholder="Nombre" id="nombre" class="mb-2"></li>
+                                              <li>  <input type="number" placeholder="Sueldo Neto" id="sueldo" class="mb-2"></li>
+                                              <li>  <input type="number" placeholder="Dinero Solicitado" id="credito" class="mb-2"></li>
+                                              <li>  <input type="number" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
+                                            </ul>
+                                        </form>            
+                                  <input type="button" class="btn btn-success W-100" type="reset" onclick="nuevasolicitud();" value="Confirmar">  
+                                  <input type="button" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
+                                </div>                                       
+                          </div>
+
+                          <div id="solicitudesRealizadas" class="col-lg-6 py-2"> 
+                              <img src="" alt="" class="w-100">
+                              <div class="bg-gradient p-2 mb-2 tituloPrincipal">
+                                  <h3>Solicitudes Realizadas</h3>
+                                  <form action="">
+                                      <button id="boton" class="btn btn-warning W-100" type="reset" onclick="versolicitudes();">VER SOLICITUDES</button>
+                                  </form>   
+                              </div>
+                              <div id="avisoDeSolicitud">
+                              
+                              </div>                 
+                          </div>
+
                 </div> 
-                <!-- termina novedades -->
+
             </div>
       </section>    
       <!-- fin seccion del sitio-->
+
+
+
   
 
       <!-- inicia script ionicons--> 
