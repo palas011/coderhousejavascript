@@ -42,11 +42,12 @@
                                               <li >  <input type="text" placeholder="Nombre" id="nombre" class="mb-2"></li>
                                               <li>  <input type="number" placeholder="Sueldo Neto" id="sueldo" class="mb-2"></li>
                                               <li>  <input type="number" placeholder="Dinero Solicitado" id="credito" class="mb-2"></li>
-                                              <li>  <input type="number" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
+                                              <li>  <input type="number" id="cuotas" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
                                             </ul>
                                         </form>            
-                                  <input type="button" class="btn btn-success W-100" type="reset" onclick="nuevasolicitud();" value="Confirmar">  
-                                  <input type="button" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
+                                  <input type="submit" id="btnConfirmar" class="btn btn-success W-100" value="Confirmar">
+                                  <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
+                                    
                                 </div>                                       
                           </div>
 
@@ -90,6 +91,8 @@
       <!-- fin script bootstrap-->
       
       <script src="js/appi.js"></script>
+
+ 
 
   </body>
 </html>

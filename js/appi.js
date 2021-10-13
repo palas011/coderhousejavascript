@@ -28,8 +28,7 @@ const nuevasolicitud =()=>{
         document.getElementById("avisoDeSolicitud").appendChild(aviso)
         document.getElementById("avisoDeSolicitud").setAttribute("class","tituloPrincipal ")       
        //console.log(document.querySelector("#cantSolicitudes"));
-        
-
+       
 
 }
 
@@ -48,6 +47,13 @@ const versolicitudes =()=>{
 } 
 
 
-const limpiarFormulario=()=> {
-    document.getElementById("formNuevaSolicitud").reset();
-}
+let btnlimpiar = document.getElementById("btnLimpiar");
+    btnLimpiar.onclick  = () =>  {document.getElementById("formNuevaSolicitud").reset()}
+    
+let cuotas  = document.getElementById("cuotas");
+    cuotas.onclick = () => {window.alert("Solo 12,15 o 18 cuotas disponibles")}
+
+let confirmar = document.getElementById("btnConfirmar");
+    confirmar.onclick =() => {
+        nuevasolicitud()
+    }
