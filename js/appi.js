@@ -20,8 +20,6 @@ const nuevasolicitud =()=>{
             solicitudes.push(solicitud)
         }
 
-
-
         const aviso = document.createElement("p")
         aviso.setAttribute("id","elementoAgregado")
         aviso.textContent = " ✓ Se agrego solicitud"  

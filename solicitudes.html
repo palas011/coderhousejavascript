@@ -33,11 +33,11 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="solicitudes.html">Solicitudes</a>
+                    <a class="nav-link disabled" href="solicitudes.html">Solicitudes</a>
                   </li>
 
                   <li class="nav-item dropdown">
@@ -63,34 +63,22 @@
       </nav>
       <!--FIN NAV--> 
        
-      <h1 class="tituloPrincipal py-5 mt-5"> <b> Asesor Financiero </b></h1>
+      <h1 class="tituloPrincipal py-5"> <b> Solicitudes Realizadas : </b></h1>
       <!--inicio seccion del sitio-->
 
       <section class="mx-auto text-center" >
             <div class="container">
-                
-                <!--empiezan productos-->
+                <div id="cajaconfirmar">
+                    <div id="confirma"></div>
+                </div>
+                <!--empieza solicitudes-->
                 <div class="row">
-
-                      <div id="solicitudPrestamo" class="col-lg-6 mx-auto">
-                          <img src="" alt="" class="w-100">
-                          <div class="bg-gradient p-2 mb-2 tituloPrincipal">
-                                  <h3>CREAR PRESTAMO</h3>
-                                        <form id="formNuevaSolicitudCredito" class="py-3">
-                                            <ul>
-                                              <li>  <input type="text" placeholder="Nombre" id="nombre" class="mb-2"></li>
-                                              <li>  <input type="number" placeholder="Sueldo Neto" id="sueldo" class="mb-2"></li>
-                                              <li>  <input type="number" placeholder="Dinero Solicitado" id="credito" class="mb-2"></li>
-                                              <li>  <input type="number" id="cuotas" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
-                                            </ul>
-                                        </form>            
-                                  <input type="submit" id="btnConfirmarprestamo" class="btn btn-success W-100"  value="Confirmar">
-                                  <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
-                                        
-                          </div>                                       
+                      <div id="nuevaSolicitud" class="mx-auto">
+                      <div class="p-2 mb-2 tituloPrincipal">
+                                  <div id="imprimirSolicitudes"></div>                                                         
                       </div>
+                </div> 
 
-                </div> <!--fin div de row-->
             </div>
       </section>    
       <!-- fin seccion del sitio-->
@@ -112,7 +100,7 @@
       <!-- fin script bootstrap-->
       
 <!--      <script src="js/appi.js"></script>-->
-<script src="js/user.js"></script>
+<script src="js/solicitudes.js"></script>
 
   </body>
 </html>

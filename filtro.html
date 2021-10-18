@@ -63,34 +63,39 @@
       </nav>
       <!--FIN NAV--> 
        
-      <h1 class="tituloPrincipal py-5 mt-5"> <b> Asesor Financiero </b></h1>
+      <h1 class="tituloPrincipal py-5"> <b> Asesor Financiero </b></h1>
       <!--inicio seccion del sitio-->
 
       <section class="mx-auto text-center" >
             <div class="container">
                 
-                <!--empiezan productos-->
+                <!--empieza novedades-->
                 <div class="row">
 
-                      <div id="solicitudPrestamo" class="col-lg-6 mx-auto">
-                          <img src="" alt="" class="w-100">
+                      <div id="nuevaSolicitud" class="col-lg-6 mx-auto">
+
+                      <img src="" alt="" class="w-100">
+
                           <div class="bg-gradient p-2 mb-2 tituloPrincipal">
-                                  <h3>CREAR PRESTAMO</h3>
-                                        <form id="formNuevaSolicitudCredito" class="py-3">
+                                  <h3>SIMULAR PRESTAMO</h3>
+                                        <form id="formNuevaSolicitud" class="py-3">
                                             <ul>
-                                              <li>  <input type="text" placeholder="Nombre" id="nombre" class="mb-2"></li>
+                                              <li >  <input type="text" placeholder="Nombre" id="nombre" class="mb-2"></li>
                                               <li>  <input type="number" placeholder="Sueldo Neto" id="sueldo" class="mb-2"></li>
                                               <li>  <input type="number" placeholder="Dinero Solicitado" id="credito" class="mb-2"></li>
                                               <li>  <input type="number" id="cuotas" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
                                             </ul>
                                         </form>            
-                                  <input type="submit" id="btnConfirmarprestamo" class="btn btn-success W-100"  value="Confirmar">
+                                  <input type="submit" id="btnConfirmar" class="btn btn-success W-100"  value="Confirmar">
                                   <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
                                         
-                          </div>                                       
-                      </div>
+                                </div>                                       
+                          </div>
 
-                </div> <!--fin div de row-->
+ 
+
+                </div> 
+
             </div>
       </section>    
       <!-- fin seccion del sitio-->
@@ -112,7 +117,7 @@
       <!-- fin script bootstrap-->
       
 <!--      <script src="js/appi.js"></script>-->
-<script src="js/user.js"></script>
+<script src="js/filtro.js"></script>
 
   </body>
 </html>

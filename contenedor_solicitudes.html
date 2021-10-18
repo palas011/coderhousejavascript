@@ -33,7 +33,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
                   </li>
                   
                   <li class="nav-item">
@@ -54,7 +54,7 @@
                    </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="contenedor_solicitudes.html">Contenedor Diario</a>
+                    <a class="nav-link disabled" href="contenedor_solicitudes.html">Contenedor Diario</a>
                   </li>
             </ul>
 
@@ -63,37 +63,24 @@
       </nav>
       <!--FIN NAV--> 
        
-      <h1 class="tituloPrincipal py-5 mt-5"> <b> Asesor Financiero </b></h1>
+      <h1 class="tituloPrincipal py-5"> <b> Contenedor Diario </b></h1>
       <!--inicio seccion del sitio-->
 
       <section class="mx-auto text-center" >
+
             <div class="container">
-                
-                <!--empiezan productos-->
-                <div class="row">
-
-                      <div id="solicitudPrestamo" class="col-lg-6 mx-auto">
-                          <img src="" alt="" class="w-100">
-                          <div class="bg-gradient p-2 mb-2 tituloPrincipal">
-                                  <h3>CREAR PRESTAMO</h3>
-                                        <form id="formNuevaSolicitudCredito" class="py-3">
-                                            <ul>
-                                              <li>  <input type="text" placeholder="Nombre" id="nombre" class="mb-2"></li>
-                                              <li>  <input type="number" placeholder="Sueldo Neto" id="sueldo" class="mb-2"></li>
-                                              <li>  <input type="number" placeholder="Dinero Solicitado" id="credito" class="mb-2"></li>
-                                              <li>  <input type="number" id="cuotas" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
-                                            </ul>
-                                        </form>            
-                                  <input type="submit" id="btnConfirmarprestamo" class="btn btn-success W-100"  value="Confirmar">
-                                  <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
-                                        
-                          </div>                                       
-                      </div>
-
-                </div> <!--fin div de row-->
+                <!--empieza grilla contenedor-->
+                <div>
+                    <div id="imprimirContenedor"></div>                                                        
+                </div> 
+                <!--terminar la grilla del contenedor-->
             </div>
+              
+            <button id="btnprocesar" class="btn btn-success mb-5">PROCESAR</button>
+            
       </section>    
       <!-- fin seccion del sitio-->
+
 
       <!-- inicia script ionicons--> 
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -112,7 +99,7 @@
       <!-- fin script bootstrap-->
       
 <!--      <script src="js/appi.js"></script>-->
-<script src="js/user.js"></script>
+<script src="js/contenedor.js"></script>
 
   </body>
 </html>
