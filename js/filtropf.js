@@ -7,7 +7,7 @@ if(localStorage.getItem("lista") == 0){
 }
 
 //let dato = prompt("Ingresar monto que desea filtrar")
-listaFiltrada = listaObjetos.filter(e=> e.tipooperacion === "Prestamo Personal")
+listaFiltrada = listaObjetos.filter(e=> e.tipooperacion === "Plazo Fijo")
 if (listaFiltrada.length != 0){
      //saco el numero de indidce de esa lista//    
     listaFiltrada.forEach(element => {
@@ -16,12 +16,12 @@ if (listaFiltrada.length != 0){
         `
         <div class="card mb-3 row ">   
                 <div class="card-body text-dark text-center">
-                        <h5 class="card-title">Solicitud de Prestamo</h5>
-                        <p class="card-text text-center "><b>Titular :</b>${element.nombre}</p>
-                        <p class="card-text text-center"><b>Sueldo Neto :</b>${element.sueldo}</p>
-                        <p class="card-text text-center"><b>Monto Solicitado :</b>${element.credito}</p>
-                        <p class="card-text text-center"><b>Cantidad de cuotas :</b>${element.cuotas} cuotas</p>
-                        <p class="card-text text-center"><b>Valor de cuotas :</b>$ ${element.credito * 2 / element.cuotas}</p>
+                        <h5 class="card-title">Solicitud de Plazo Fijo</h5>
+                        <p class="card-text text-center "><b>Titular :</b>${element.nombrepf}</p>
+                        <p class="card-text text-center"><b>Deposito Inicial : </b>$${element.depositopf}</p>
+                        <p class="card-text text-center"><b>Dias :</b>${element.diaspf}</p>
+                        <p class="card-text text-center"><b>T.N.A :</b>37%</p>
+                        <p class="card-text text-center"><b>Intereses a obtener :</b>$ ${element.depositopf*0.37}</p>
                         <a href="#" class="btn btn-primary" onclick="comprar(${index})">CONFIRMAR SOLICITUD</a>   
                 </div>
         </div>`  

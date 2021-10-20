@@ -7,7 +7,7 @@ if(localStorage.getItem("lista") == 0){
 }
 
 //let dato = prompt("Ingresar monto que desea filtrar")
-listaFiltrada = listaObjetos.filter(e=> e.tipooperacion === "Prestamo Personal")
+listaFiltrada = listaObjetos.filter(e=> e.tipooperacion === "Caja de Ahorro")
 if (listaFiltrada.length != 0){
      //saco el numero de indidce de esa lista//    
     listaFiltrada.forEach(element => {
@@ -16,15 +16,12 @@ if (listaFiltrada.length != 0){
         `
         <div class="card mb-3 row ">   
                 <div class="card-body text-dark text-center">
-                        <h5 class="card-title">Solicitud de Prestamo</h5>
-                        <p class="card-text text-center "><b>Titular :</b>${element.nombre}</p>
-                        <p class="card-text text-center"><b>Sueldo Neto :</b>${element.sueldo}</p>
-                        <p class="card-text text-center"><b>Monto Solicitado :</b>${element.credito}</p>
-                        <p class="card-text text-center"><b>Cantidad de cuotas :</b>${element.cuotas} cuotas</p>
-                        <p class="card-text text-center"><b>Valor de cuotas :</b>$ ${element.credito * 2 / element.cuotas}</p>
+                        <h5 class="card-title">Solicitud de Caja de Ahorro</h5>
+                        <p class="card-text text-center "><b>Titular :</b>${element.nombrecahorro}</p>
+                        <p class="card-text text-center"><b>Deposito Inicial : </b>$${element.deposito_cahorro}</p>
                         <a href="#" class="btn btn-primary" onclick="comprar(${index})">CONFIRMAR SOLICITUD</a>   
                 </div>
-        </div>`  
+        </div>` 
     });
 } else {
     alert("NO TENES SOLICITUDES DE ESE PRODUCTO")
