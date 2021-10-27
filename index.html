@@ -19,7 +19,7 @@
 
   </header>  
 
-  <body class="wallpage">
+  <body class="wallpageBlanco">
 
 
       <!--NAV-->
@@ -58,6 +58,13 @@
                   </li>
             </ul>
 
+            <form class="d-flex" id="botonera">
+              <div id="oscurecer" class="btn btn-outline-dark" type="submit">OSCURECER</div>
+              <div id="aclarar" class="btn btn-outline-dark" type="submit" style="display: none;" >ACLARAR</div>
+
+
+            </form>
+
           </div>
         </div>
       </nav>
@@ -74,7 +81,7 @@
 
                       <div id="solicitudPrestamo" class="col-lg-4 mx-auto">
                           <img src="" alt="" class="w-100">
-                          <div class="bg-gradient p-2 mb-2 tituloPrincipal">
+                          <div id="cajaprestamo" class="cards_forms p-2 mb-2 tituloPrincipal">
                                   <h3>CREAR PRESTAMO</h3>
                                         <form id="formNuevaSolicitudCredito" class="py-3">
                                             <ul>
@@ -84,15 +91,17 @@
                                               <li>  <input type="number" id="cuotas" placeholder="Cantidad de cuotas" id="cuotas"class="mb-2" ></li>                         
                                             </ul>
                                         </form>            
-                                  <input type="submit" id="btnConfirmarprestamo" class="btn btn-success W-100"  value="Confirmar">
+                                  <input type="submit" id="btnConfirmarprestamo" class="btn tn btn-dark W-100"  value="Confirmar">
                                   <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
-                                        
+                                  
+                                    <div id="salida" class="mt-2"></div>
+                                       
                           </div>                                       
                       </div>
 
                       <div id="solicitudPrestamo" class="col-lg-4 mx-auto">
                         <img src="" alt="" class="w-100">
-                        <div class="bg-gradient p-2 mb-2 tituloPrincipal">
+                        <div class="cards_forms p-2 mb-2 tituloPrincipal">
                                 <h3>CREAR PLAZO FIJO</h3>
                                       <form id="formNuevaSolicitudPf" class="py-3">
                                           <ul>
@@ -101,7 +110,7 @@
                                             <li>  <input type="number" placeholder="Cantidad de dias" id="dias_pf" class="mb-2"></li>
                                           </ul>
                                       </form>            
-                                <input type="submit" id="btnConfirmarpf" class="btn btn-success W-100"  value="Confirmar">
+                                <input type="submit" id="btnConfirmarpf" class="btn tn btn-dark W-100"  value="Confirmar">
                                 <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
                                       
                         </div>                                       
@@ -109,7 +118,7 @@
 
                     <div id="solicitudCahorro" class="col-lg-4 mx-auto">
                       <img src="" alt="" class="w-100">
-                      <div class="bg-gradient p-2 mb-2 tituloPrincipal">
+                      <div class="cards_forms p-2 mb-2 tituloPrincipal">
                               <h3>CREAR CAJA DE AHORRO</h3>
                                     <form id="formNuevaSolicitudCahorro" class="py-3">
                                         <ul>
@@ -117,7 +126,7 @@
                                           <li>  <input type="number" placeholder="Deposito Inicial" id="deposito_cahorro" class="mb-2"></li>
                                         </ul>
                                     </form>            
-                              <input type="submit" id="btnConfirmarcahorro" class="btn btn-success W-100"  value="Confirmar">
+                              <input type="submit" id="btnConfirmarcahorro" class="btn tn btn-dark W-100"  value="Confirmar">
                               <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
                                     
                       </div>                                       
@@ -147,6 +156,13 @@
       
 <!--      <script src="js/appi.js"></script>-->
 <script src="js/user.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+<script src="js/jquery.js"></script>
+
 
 
   </body>

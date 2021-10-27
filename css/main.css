@@ -50,7 +50,7 @@ article p {
   font-family: "Archivo Black", sans-serif;
   text-align: center;
   padding: 1rem;
-  color: #FFFFFF; }
+  color: #000000; }
 
 .breadcrum__bg {
   background-color: #FFFFFF; }
@@ -161,12 +161,11 @@ form ul li {
   background-color: #5bbe98;
   color: #FFFFFF; }
 
-.wallpage {
-  background-image: url(../media/wall.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
+.wallpageBlanco {
+  background-color: #e6e6e6; }
+
+.wallpageNegro {
+  background-color: black; }
 
 footer {
   background-color: #000000;

@@ -151,10 +151,10 @@ const crearOperacionCahorro =()=>{
     //**accion del boton en form */
     let ConfirmarCahorro = document.getElementById("btnConfirmarcahorro");
         ConfirmarCahorro.onclick =() => {
-        if (window.confirm("¿Desea grabar esta operación?")) {           
-        crearOperacionCahorro()
-        limpiarFormularios ()
-        }
+            if (window.confirm("¿Desea grabar esta operación?")) {           
+            crearOperacionCahorro()
+            limpiarFormularios ()
+            }
     }
 //****fin operacion caja ahorro */
 
@@ -166,3 +166,4 @@ limpiarFormularios =()=>{
     document.getElementById("formNuevaSolicitudPf").reset()
     document.getElementById("formNuevaSolicitudCahorro").reset()
 }
+

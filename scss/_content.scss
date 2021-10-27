@@ -10,7 +10,7 @@ article {
     font-family: $fontMain2;
     text-align: center;
     padding: 1rem;
-    color: $bg-white;
+    color: $bg-dark;
 }
 
 .breadcrum__bg{
@@ -121,10 +121,10 @@ article {
                 color:$bg-white;
             }
 
-.wallpage{
-    background-image: url(../media/wall.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;    
+.wallpageBlanco{
+    background-color: rgb(230, 230, 230);   
+}
+
+.wallpageNegro{
+    background-color: rgb(0, 0, 0);   
 }
