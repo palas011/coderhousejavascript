@@ -30,6 +30,33 @@ $('#aclarar').on('click', function () {
         $('#aclarar').hide();
 }); 
 
+/*ULTIMO CLIP VERDE CONFIRMACION*/
+$("#cuotas").on("click",() =>{
+        $("#btnConfirmarprestamo").addClass('bg-success');     
+})
+$("#dias_pf").on("click",() =>{
+        $("#btnConfirmarpf").addClass('bg-success');     
+})
+$("#deposito_cahorro").on("click",() =>{
+        $("#btnConfirmarcahorro").addClass('bg-success');     
+})
+
+/*MUESTRA CONDICIONES*/
+$("#btncondiciones").on("click",() =>{
+        $("#condiciones").slideDown(500);
+        $("#condiciones").addClass('apagar_elemento mx-auto text-center mt-5 bg-warning py-5');
+        $("#btncondiciones").hide();
+        $("#btncondiciones2").show();
+})
+
+$("#btncondiciones2").on("click",() =>{
+        $("#condiciones").fadeOut(500);
+        $("#btncondiciones").show();
+        $("#btncondiciones2").hide();
+})
 
 
 
+
+
+                 

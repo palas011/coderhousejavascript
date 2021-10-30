@@ -23,7 +23,7 @@
 
 
       <!--NAV-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-nav">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,6 +69,7 @@
         </div>
       </nav>
       <!--FIN NAV--> 
+
        
       <h1 class="tituloPrincipal py-5 mt-5"> <b> Asesor Financiero </b></h1>
       <!--inicio seccion del sitio-->
@@ -79,7 +80,7 @@
                 <!--empiezan productos-->
                 <div class="row">
 
-                      <div id="solicitudPrestamo" class="col-lg-4 mx-auto">
+                    <div id="solicitudPrestamo" class="col-lg-4 mx-auto">
                           <img src="" alt="" class="w-100">
                           <div id="cajaprestamo" class="cards_forms p-2 mb-2 tituloPrincipal">
                                   <h3>CREAR PRESTAMO</h3>
@@ -94,12 +95,12 @@
                                   <input type="submit" id="btnConfirmarprestamo" class="btn tn btn-dark W-100"  value="Confirmar">
                                   <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
                                   
-                                    <div id="salida" class="mt-2"></div>
+                                  <div id="salida" class="mt-2"></div>
                                        
                           </div>                                       
-                      </div>
+                    </div>
 
-                      <div id="solicitudPrestamo" class="col-lg-4 mx-auto">
+                    <div id="solicitudPrestamo" class="col-lg-4 mx-auto">
                         <img src="" alt="" class="w-100">
                         <div class="cards_forms p-2 mb-2 tituloPrincipal">
                                 <h3>CREAR PLAZO FIJO</h3>
@@ -130,13 +131,45 @@
                               <input type="button" id="btnLimpiar" class="btn btn-danger W-100" onclick="limpiarFormulario()" value="Limpiar">
                                     
                       </div>                                       
-                  </div>
+                    </div>
 
 
                 </div> <!--fin div de row-->
+
+                <div class="py-5">
+                  <button type="button" id="btncondiciones" class="btn btn-warning"> Ver Condiciones Comerciales</button>                
+                  <button type="button" id="btncondiciones2" class="btn btn-warning apagar_elemento"  style="display: none;" >Ver Condiciones Comerciales</button>                
+                </div>
+
             </div>
       </section>    
       <!-- fin seccion del sitio-->
+
+      <!--condiciones comerciales-->
+      <div id="condiciones" class="apagar_elemento" >
+        <div class="container">
+
+              <h2 class="tituloPrincipal py-2"> <b> Condiciones Comerciales </b></h1>
+              <!--empiezan productos-->
+              <div class="row">
+                  <p>
+                    DÉBITOS AUTOMÁTICOS EN CAJA DE AHORRO Y CUENTA CORRIENTE: Si tenés débitos automáticos de servicios activos en tu Caja de ahorro o Cuenta Corriente, recordá que podés hacer el stop debit, la anulación o desadhesión y el pedido de reversión, en Online Banking u Office Banking. En Online Banking, sección: Pago de servicios > Más opciones > Ver débitos automáticos en cuenta. En Office Banking, sección: Pagos > Débitos Automáticos > Histórico
+
+                    ANULACIÓN DE PAGO DE TARJETA DE CRÉDITO: : podés solicitar la anulación de tu pago hasta 30 días después de realizado. Para pagos pago en pesos solicitala en: Online Banking, sección: Tarjeta > Movimiento de pago > Solicitar anulación de pago. Para anular pagos en dólares comunícate al 0810-444-6500 o escribinos a bancogalicia bancogalicia@bancogalicia.com
+                    
+                    ANULACIÓN DE PAGO DE CUOTA DE PRÉSTAMO: podés solicitar la anulación de tu pago hasta 30 días corridos después de ralizado, desde Online Banking, se cción: Préstamos > Ver detalle de cuotas > Revertir cuota.
+                    
+                    PRECIOS Y COMISIONES | CUENTAS: Mantenimiento mensual y servicios: Caja de Ahorro: 100% gratis, Caja de ahorro en dólares: gratis, Cuenta Corriente: $975 | OTRAS COMISIONES: Transacciones por ATM en Red Galicia 24 (red propia): Sin cargo, Transacciones por ATM en la Red Banelco: $80 Transacciones por ATM en la Red link: $91. Precios Vigentes hasta el 31/05/2021.
+                                    </p>
+              </div>
+
+        </div>    
+      </div>
+
+      <footer >
+        <p class="text-center mt-5">Copyright 2001-2021 Acesor financiero. Todos los derechos reservados. Prohibida la duplicación, distribución o almacenamiento en cualquier medio.</p>
+      </footer>
+      
 
       <!-- inicia script ionicons--> 
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -154,14 +187,14 @@
       </script>
       <!-- fin script bootstrap-->
       
-<!--      <script src="js/appi.js"></script>-->
-<script src="js/user.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous">
-</script>
-<script src="js/jquery.js"></script>
+      <!--      <script src="js/appi.js"></script>-->
+      <script src="js/user.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+      </script>
+      <script src="js/jquery.js"></script>
 
 
 

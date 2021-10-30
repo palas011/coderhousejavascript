@@ -28,6 +28,9 @@ img {
 video {
   max-width: 100%; }
 
+.apagar_elemento {
+  display: none; }
+
 nav {
   background: -webkit-linear-gradient(bottom, #1C67B4);
   background: -moz-linear-gradient(bottom, #1C67B4);
@@ -39,6 +42,9 @@ nav img {
 
 nav ul li a {
   font-size: 1.5rem; }
+
+.bg-nav {
+  background-color: #d4d4d4; }
 
 article {
   color: burlywood; }
@@ -162,16 +168,16 @@ form ul li {
   color: #FFFFFF; }
 
 .wallpageBlanco {
-  background-color: #e6e6e6; }
+  background-color: white; }
 
 .wallpageNegro {
   background-color: black; }
 
 footer {
-  background-color: #000000;
-  text-align: left;
+  text-align: center;
   padding: 2rem;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: small; }
 
 footer img {
   width: 150px; }
