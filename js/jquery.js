@@ -57,6 +57,3 @@ $("#btncondiciones2").on("click",() =>{
 
 
 
-
-
-                 

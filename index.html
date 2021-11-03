@@ -61,9 +61,9 @@
             <form class="d-flex" id="botonera">
               <div id="oscurecer" class="btn btn-outline-dark" type="submit">OSCURECER</div>
               <div id="aclarar" class="btn btn-outline-dark" type="submit" style="display: none;" >ACLARAR</div>
-
-
             </form>
+
+
 
           </div>
         </div>
@@ -137,8 +137,10 @@
                 </div> <!--fin div de row-->
 
                 <div class="py-5">
-                  <button type="button" id="btncondiciones" class="btn btn-warning"> Ver Condiciones Comerciales</button>                
-                  <button type="button" id="btncondiciones2" class="btn btn-warning apagar_elemento"  style="display: none;" >Ver Condiciones Comerciales</button>                
+                  <button type="button" id="btncondiciones" class="btn btn-warning py-2"> Terminos y Condiciones</button>                
+                  <button type="button" id="btncondiciones2" class="btn btn-warning apagar_elemento py-2"  style="display: none;" >Terminos y Condiciones</button>  
+                  <button type="button" id="btndolar" class="btn btn-success py-2"> Cotizacion del dolar</button>                
+              
                 </div>
 
             </div>
@@ -160,11 +162,19 @@
                     ANULACIÓN DE PAGO DE CUOTA DE PRÉSTAMO: podés solicitar la anulación de tu pago hasta 30 días corridos después de ralizado, desde Online Banking, se cción: Préstamos > Ver detalle de cuotas > Revertir cuota.
                     
                     PRECIOS Y COMISIONES | CUENTAS: Mantenimiento mensual y servicios: Caja de Ahorro: 100% gratis, Caja de ahorro en dólares: gratis, Cuenta Corriente: $975 | OTRAS COMISIONES: Transacciones por ATM en Red Galicia 24 (red propia): Sin cargo, Transacciones por ATM en la Red Banelco: $80 Transacciones por ATM en la Red link: $91. Precios Vigentes hasta el 31/05/2021.
-                                    </p>
+                  </p>
               </div>
 
         </div>    
       </div>
+
+      <!--cotizacion del dolar-->
+      <div id="dolar" class="apagar_elemento container mt-3">
+         <div id="cotizacion" class="row">
+
+         </div>
+      </div>
+ 
 
       <footer >
         <p class="text-center mt-5">Copyright 2001-2021 Acesor financiero. Todos los derechos reservados. Prohibida la duplicación, distribución o almacenamiento en cualquier medio.</p>
@@ -195,6 +205,7 @@
         crossorigin="anonymous">
       </script>
       <script src="js/jquery.js"></script>
+      <script src="js/appi_ajax.js"></script>
 
 
 
