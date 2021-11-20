@@ -173,6 +173,9 @@ form ul li {
 .wallpageNegro {
   background-color: black; }
 
+.cajaFija {
+  height: 20rem; }
+
 footer {
   text-align: center;
   padding: 2rem;

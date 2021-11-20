@@ -14,17 +14,17 @@ if (listaFiltrada.length != 0){
         let index = listaObjetos.indexOf(element);
         imprimirSolicitudes.innerHTML +=  
         `
-        <div class="card mb-3 row ">   
-                <div class="card-body text-dark text-center">
-                        <h5 class="card-title">Solicitud de Prestamo</h5>
-                        <p class="card-text text-center "><b>Titular :</b>${element.nombre}</p>
-                        <p class="card-text text-center"><b>Sueldo Neto :</b>${element.sueldo}</p>
-                        <p class="card-text text-center"><b>Monto Solicitado :</b>${element.credito}</p>
-                        <p class="card-text text-center"><b>Cantidad de cuotas :</b>${element.cuotas} cuotas</p>
-                        <p class="card-text text-center"><b>Valor de cuotas :</b>$ ${element.credito * 2 / element.cuotas}</p>
-                        <a href="#" class="btn btn-primary" onclick="comprar(${index})">CONFIRMAR SOLICITUD</a>   
-                </div>
-        </div>`  
+            <div class="card col-lg-4 py-5 mb-3 bg-danger">
+                <h5 class="card-title"><b>Solicitud de Prestamo</b></h5>
+                <p class="card-text text-center "><b>Titular :</b>${element.nombre}</p>
+                <p class="card-text text-center"><b>Sueldo Neto :</b>${element.sueldo}</p>
+                <p class="card-text text-center"><b>Monto Solicitado :</b>${element.credito}</p>
+                <p class="card-text text-center"><b>Cantidad de cuotas :</b>${element.cuotas} cuotas</p>
+                <p class="card-text text-center"><b>Valor de cuotas :</b>$ ${element.credito * 2 / element.cuotas}</p>
+                <a href="#" class="btn btn-primary" onclick="comprar(${index})">CONFIRMAR SOLICITUD</a>   
+            </div>
+
+        `  
     });
 } else {
     alert("NO TENES SOLICITUDES DE ESE PRODUCTO")

@@ -22,46 +22,54 @@
   <body class="wallpage">
 
 
-      <!--NAV-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <!--NAV-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="solicitudes.html">Solicitudes</a>
-                  </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="solicitudes.html">Solicitudes</a>
+                </li>
 
-                  <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Filtrar
-                  </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a id="btnfiltro_prestamos" class="dropdown-item" href="filtro.html">Creditos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a id="btnfiltro_pf" class="dropdown-item" href="filtro_pf.html">Plazo Fijo</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a id="btnfiltro_cahorro" class="dropdown-item" href="filtro_ca.html">Cajas Ahorro</a></li>
-                        </ul>
-                   </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filtrar
+                </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a id="btnfiltro_prestamos" class="dropdown-item" href="filtro.html">Creditos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a id="btnfiltro_pf" class="dropdown-item" href="filtro_pf.html">Plazo Fijo</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a id="btnfiltro_cahorro" class="dropdown-item" href="filtro_ca.html">Cajas Ahorro</a></li>
+                      </ul>
+                 </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="contenedor_solicitudes.html">Contenedor Diario</a>
-                  </li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="contenedor_solicitudes.html">Contenedor Diario</a>
+                </li>
+          </ul>
 
-          </div>
+          <form class="d-flex" id="botonera">
+            <div id="oscurecer" class="btn btn-outline-dark" type="submit">OSCURECER</div>
+            <div id="aclarar" class="btn btn-outline-dark" type="submit" style="display: none;" >ACLARAR</div>
+          </form>
+
+
+
         </div>
-      </nav>
-      <!--FIN NAV--> 
+      </div>
+    </nav>
+    <!--FIN NAV--> 
+
        
       <h1 class="tituloPrincipal py-5"> <b> Solicitudes Realizadas : </b></h1>
       <!--inicio seccion del sitio-->

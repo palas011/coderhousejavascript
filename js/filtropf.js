@@ -14,8 +14,7 @@ if (listaFiltrada.length != 0){
         let index = listaObjetos.indexOf(element);
         imprimirSolicitudes.innerHTML +=  
         `
-        <div class="card mb-3 row ">   
-                <div class="card-body text-dark text-center">
+        <div class="card col-lg-4 py-5 mb-3 bg-warning ">
                         <h5 class="card-title">Solicitud de Plazo Fijo</h5>
                         <p class="card-text text-center "><b>Titular :</b>${element.nombrepf}</p>
                         <p class="card-text text-center"><b>Deposito Inicial : </b>$${element.depositopf}</p>
@@ -23,7 +22,6 @@ if (listaFiltrada.length != 0){
                         <p class="card-text text-center"><b>T.N.A :</b>37%</p>
                         <p class="card-text text-center"><b>Intereses a obtener :</b>$ ${element.depositopf*0.37}</p>
                         <a href="#" class="btn btn-primary" onclick="comprar(${index})">CONFIRMAR SOLICITUD</a>   
-                </div>
         </div>`  
     });
 } else {

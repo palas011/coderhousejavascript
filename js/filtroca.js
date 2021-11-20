@@ -14,14 +14,14 @@ if (listaFiltrada.length != 0){
         let index = listaObjetos.indexOf(element);
         imprimirSolicitudes.innerHTML +=  
         `
-        <div class="card mb-3 row ">   
+        <div class="card col-lg-4 py-5 mb-3 bg-success ">
                 <div class="card-body text-dark text-center">
                         <h5 class="card-title">Solicitud de Caja de Ahorro</h5>
                         <p class="card-text text-center "><b>Titular :</b>${element.nombrecahorro}</p>
                         <p class="card-text text-center"><b>Deposito Inicial : </b>$${element.deposito_cahorro}</p>
                         <a href="#" class="btn btn-primary" onclick="comprar(${index})">CONFIRMAR SOLICITUD</a>   
                 </div>
-        </div>` 
+       ` 
     });
 } else {
     alert("NO TENES SOLICITUDES DE ESE PRODUCTO")
